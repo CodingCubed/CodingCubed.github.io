@@ -43,7 +43,7 @@ home.addEventListener("click", () => {
      tabContent.innerHTML=`
           <div class="text-container">
                <h1 style="color: white;">Hey, I'm <span id="cooltext">Jaxson</span></h1>
-               <p style="color: rgb(200, 200, 220); font-size: 19px;">I am a 14 year old beginner web designer. I know HTML, CSS, JS, Python, PHP, some React, some Java, and some C++<p>
+               <p style="color: rgb(200, 200, 220); font-size: 19px;">I am a 14 year old (self-diagnosed) programmer. I am most familiar with Java, Kotlin, C++, HTML, CSS, React/JS.<p>
           </div>
      `;
 });
