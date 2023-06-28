@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
      tabContent.innerHTML=`
           <div class="text-container">
                <h1 style="color: white;">Hey, I'm <span id="cooltext">Jaxson</span></h1>
-               <p style="color: rgb(200, 200, 220); font-size: 19px;">I am a 14 year old programmer. I like software dev languages like Java, C++, Rust, and Kotlin.<p>
+               <p style="color: rgb(200, 200, 220); font-size: 19px;">I am a 14 year old (self-diagnosed) programmer. I am most familiar with Java, Kotlin, C++, HTML, CSS, React/JS.<p>
           </div>
      `;
      home.style.backgroundColor="rgb(34, 34, 45)";
