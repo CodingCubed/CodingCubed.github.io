@@ -50,13 +50,13 @@ home.addEventListener("click", () => {
 projects.addEventListener("click", () => {
      tabContent.innerHTML=`
           <div class="card" id="card1">
-               <p id="card1text" style="color: rgb(200, 200, 220);">Java Trivia</p>
+               <p id="card1text" style="color: rgb(200, 200, 220);">Java Math Lib.</p>
           </div>
           <div class="card" id="card2">
-               <p id="card2text" style="color: rgb(200, 200, 220);">CSS Utility</p>
+               <p id="card2text" style="color: rgb(200, 200, 220);">Stock Market<br>Web App</p>
           </div>
           <div class="card" id="card3">
-               <p id="card3text" style="color: rgb(200, 200, 220);">Portfolio</p>
+               <p id="card3text" style="color: rgb(200, 200, 220);">Web-based<br>OS</p>
           </div>
      `;
 });
