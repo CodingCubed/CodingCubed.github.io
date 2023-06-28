@@ -64,7 +64,7 @@ about.addEventListener("click", () => {
      tabContent.innerHTML=`
           <div class="text-container">
                <h1 style="color: white;">About <span id="cooltext">Me</span></h1>
-               <p style="color: rgb(200, 200, 220); font-size: 20px;">I started coding when I was only 8. I was block coding. However, this felt bland a simple. So, I opted for text coding. I learned that you can make websites using HTML, CSS, and JS. Over the past year or so, I have been hyper-focused on computer science. Quite recently, I won student of the year in my computer science class. (likely because they are doing learning the Python basics).</p>
+               <p style="color: rgb(200, 200, 220); font-size: 20px;">I started coding when I was only 8. I was block coding. However, this felt bland a simple. So, I opted for text coding. I learned that you can make websites using HTML, CSS, and JS. Over the past year or so, I have been hyper-focused on computer science. Quite recently, I won student of the year in my computer science class. (likely because they are learning the Python basics).</p>
           </div>
      `;
 });
