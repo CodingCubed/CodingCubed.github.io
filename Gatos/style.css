@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #15181b;
+    overflow: hidden;
+    color: white;
+    font-family: "Roboto";
+}
+nav {
+    /* border: 1px solid red; */
+    width: max-content;
+    padding: 5px;
+    background: transparent;
+    display: flex;
+    padding: 4px 0px;
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background: #232323;
+}
+img[src="clouds.jpg"] {
+    width: 100%;
+    position: absolute;
+    z-index: -1000;
+    pointer-events: none;
+}
+div > img {
+    aspect-ratio: 1;
+    height: 100%;
+}
+.app-button {
+    transition: .3s ease;
+    margin: 0px 2px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    transform: translate(0);
+    height: 50px;
+    padding: 0;
+    background: #343434;
+}
+.app-button:nth-child(1) {
+    margin-left: 4px;
+    border-radius: 8px 4px 4px 8px;
+}
+.app-button:nth-last-child(1) {
+    margin-right: 4px;
+    border-radius: 4px 8px 8px 4px;
+}
+.app-button:hover {
+    transition: .3s ease;
+    transform: translateY(-10%);
+    filter: brightness(120%);
+}
+.app-button > p {
+    font-size: 20px;
+}
+#hover-info {
+    transition: .5s ease;
+    color: rgb(186, 199, 211);
+    background: rgb(21, 22, 24);
+    width: max-content;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 2px solid rgb(67, 68, 70);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: 4px 8px;
+    line-height: 20px;
+    font-family: "Roboto";
+    border-radius: 5px;
+    transform: translateX(-200%);
+}
+#settings-app {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background: #121212;
+}
+#settings-app-nav {
+    border: none;
+    border-right: 1px solid #343434;
+    font-family: "Karla";
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#settings-app-nav > div {
+    border: none;
+    border-bottom: 1px solid #232323;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+#settings-app-nav > div > p {
+    color: white;
+    padding: 15px 10px;
+    background-image: none;
+    border-radius: 10px;
+}
+#settings-app-nav > div > p:hover {
+    background-image: linear-gradient(145deg, rgb(128, 128, 221), rgb(71, 71, 209));
+}
