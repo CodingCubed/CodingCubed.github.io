@@ -1,187 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto&display=swap');
+* {
+     box-sizing: border-box;
+}
 body {
-     background-color: rgb(20, 20, 26);
-}
-#contact {
-     background-color: rgb(20, 20, 26);
-     font-family: Poppins;
-     color: rgb(255, 143, 123);
-     border: 1px solid rgba(255, 136, 136, 0.741);
-     height: 50px;
-     padding: 0px 20px 0px 20px;
-     font-size: 20px;
-     position: absolute;
-     right: 0px;
-     left: auto;
-     margin-right: 8px;
-     transition: .4s ease;
-}
-#contact:hover {
-     background-color:rgb(255, 73, 57);
-     transition: .4s ease;
+     background: #121212;
      color: white;
-     border: 1px solid rgb(255, 126, 104);
+     font-family: "Roboto";
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0;
+     margin: 0;
+     height: 100vh;
+}
+p {
+     transition: .2s ease;
+     color: rgb(148, 148, 222);
+     margin: 5px;
+     background: #343434;
+     padding: 5px;
+     border-radius: 5px;
      cursor: pointer;
+}
+p:hover {
+     color: rgb(100, 100, 255);
+     text-decoration: underline;
+     scale: 1.1;
 }
 .container {
-     /* border: 1px solid rgba(255, 255, 255, 0.06); */
-     height: 600px;
-     width: 900px;
+     background: #232323;
+     display: flex;
+     padding: 5px;
+     border-radius: 10px;
+}
+#img {
      position: absolute;
-     left: 50%;
-     top: 50%;
-     transform: translate(-50%, -50%);
-     border-radius: 30px;
-}
-.window-buttons {
-     width: 100px;
-}
-.navbar {
-     border: 1px solid rgba(200, 200, 220, 0.223);
-     height: 7.5%;
-     margin-top: 10px;
-     width: 880px;
-     margin-left: 10px;
-     border-radius: 20px 20px 10px 10px;
-}
-.body {
-     border: 1px solid rgba(200, 200, 220, 0.223);
-     margin-top: 10px;
-     width: 880px;
-     margin-left: 10px;
-     height: 520px;
-     border-radius: 10px 10px 20px 20px;
-}
-#close {
-     background-color: rgb(255, 73, 57);
-     border: none;
-     height: 20px;
-     width: 20px;
-     border-radius: 1000px;
-     margin-left: 15px;
-     cursor: pointer;
-}
-#minimize {
-     background-color: rgb(255, 213, 0);
-     height: 20px;
-     width: 20px;
-     border: none;
-     border-radius: 1000px;
-     margin-left: 5px;
-     cursor: pointer;
-     margin-top: 2px;
-}
-#maximize {
-     background-color: rgb(38, 197, 27);
-     height: 20px;
-     width: 20px;
-     border: none;
-     border-radius: 1000px;
-     margin-left: 5px;
-     cursor: pointer;
-}
-.navbar {
-     display: flex;
-     align-items: center;
-     overflow: hidden;
-}
-.tabContainer {
-     height: 100%;
-     width: 800px;
-     margin-left: 20px;
-}
-.buttonContainer {
-     height: 100%;
-     width: 100%;
-}
-.tabContainer > .buttonContainer > button {
-     background-color: rgb(20, 20, 26);
-     border: none;
-     border-left: 1px solid rgba(255, 255, 255, 0.06);
-     border-right: 1px solid rgba(255, 255, 255, 0.06);
-     height: 100%;
-     width: 25.247321128845213%;
-     color: white;
-     text-align: center;
-     overflow: hidden;
-     white-space: nowrap;
-     font-size: 17.5px;
-     font-family: Poppins;
-     transition: .2s ease;
-     box-sizing: border-box;
-     margin-left: -5px;
-     cursor: pointer;
-}
-/* .tabContainer > .buttonContainer > button:last-child {
-     overflow: hidden;
-} */
-#tabContent {
-     box-sizing: border-box;
-     height: 520px;
-     border-radius: 10px 10px 20px 20px;
-     position: absolute;
-     width: 880px;
-}
-.text-container {
-     display: flex;
-     justify-content: center;
-     height: 100%;
-     align-items: center;
-     flex-direction: column;
-}
-.text-container > h1 {
-     font-family: Poppins;
-}
-#cooltext {
-     background-image: linear-gradient(to right, #ee0979, #ff6a00);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-}
-.text-container > p {
-     margin-top: 0px;
-     width: 400px;
-     text-align: center;
-     font-family: Poppins;
-}
-.body > #tabContent > .card{
-     white-space: nowrap;
-}
-#tabContent {
-     display: flex;
-     justify-content: space-evenly;
-     align-items: center;
-}
-.card {
-     height: 50%;
-     width: max-content;
-     border-radius: 20px;
-     background-color: rgb(20, 20, 26);
-     padding: 0px 20px 0px 20px;
-     overflow: hidden;
-}
-#card1 {
-     border: 1px solid rgb(87, 92, 179);
-}
-#card2 {
-     border: 1px solid rgb(90, 186, 93);
-}
-#card3 {
-     border: 1px solid rgb(192, 106, 92);
-}
-.card > p {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     font-family: poppins;
-     box-sizing: border-box;
-     height: 100%;
-     width: 100%;
-     font-size: 30px;
-     margin-top: 0px;
-}
-img[src="me2.jpg"] {
-     height: 400px;
-     border-radius: 20px;
-     border: 1px solid rgba(255, 255, 255, 0.495);
+     aspect-ratio: 1;
+     height: 150px;
+     right: 0;
+     bottom: 0;
 }
