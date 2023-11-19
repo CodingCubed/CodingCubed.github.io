@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: "inter";
+}
+body {
+    background: white;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+input[type="text"] {
+    height: 40px;
+    width: 300px;
+    border-radius: 8px;
+    border: 2px solid #dbdbdb;
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 17px;
+}
+input:focus {
+    border: 2px solid #ababab;
+    outline: none;
+}
+#inputs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+button {
+    transition: 100ms ease;
+    margin-left: 5px;
+    aspect-ratio: 1;
+    height: 40px;
+    padding: 0;
+    background: white;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    transition: 100ms ease;
+    scale: 1.2;
+    filter: saturate(150%);
+}
+i {
+    background-image: linear-gradient(135deg, rgb(96, 255, 74), rgb(54, 175, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 18px;
+}
+#input-field {
+    text-align: left;
+    width: 254px;
+}
