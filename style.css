@@ -1,42 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@400;500;600;700&display=swap');
+
 * {
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
-     background: #121212;
-     color: white;
-     font-family: "Roboto";
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding: 0;
-     margin: 0;
-     height: 100vh;
+    background: white;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
 }
-p {
-     transition: .2s ease;
-     color: rgb(148, 148, 222);
-     margin: 5px;
-     background: #343434;
-     padding: 5px;
-     border-radius: 5px;
-     cursor: pointer;
+
+nav {
+    height: 80px;
+    border-bottom: 2px solid #ededed;
+    display: flex;
+    align-items: center;
+    padding: 0px 100px;
 }
-p:hover {
-     color: rgb(100, 100, 255);
-     text-decoration: underline;
-     scale: 1.1;
+
+.nav-buttons {
+    margin-left: auto;
 }
-.container {
-     background: #232323;
-     display: flex;
-     padding: 5px;
-     border-radius: 10px;
+
+.nav-buttons > button {
+    transition: 100ms ease;
+    border: none;
+    aspect-ratio: 1;
+    height: 40px;
+    font-size: 18px;
+    background: #dbdbdb;
+    color: #ffffff;
+    border-radius: 12px;
+    cursor: pointer;
 }
-#img {
-     position: absolute;
-     aspect-ratio: 1;
-     height: 150px;
-     right: 0;
-     bottom: 0;
+
+.nav-buttons > button:hover {
+    transition: 100ms ease;
+    filter:saturate(200%);
+    scale: 1.2;
+}
+
+#discord {
+    color: #627bd6;
+    background: #dde4fd;
+}
+
+#title {
+    font-family: "Bagel Fat One";
+    font-size: 25px;
+    user-select: none;
+}
+
+#input-field {
+    height: 44px;
+    font-size: 17px;
+    font-family: "Inter";
+    border-radius: 5px;
+    border: 2px solid #dbdbdb;
+    padding: 0px 5px;
+    width: 400px;
+}
+
+#input-field:focus {
+    /* border: none; */
+    outline: none;
+}
+
+#add-button {
+    aspect-ratio: 1;
+    height: 44px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #dbdbdb;
+    background: #fefefe;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#add-button:hover {
+    background: #f5f5f5;
+}
+
+.fa-plus {
+    transition: 100ms ease;
+}
+
+#add-button:hover .fa-plus {
+    transition: 100ms ease;
+    scale: 1.2;
+}
+
+#add-button > .fa-plus {
+    background-image: linear-gradient(135deg, rgb(96, 255, 74), rgb(54, 175, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#input {
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+#todo-container > p {
+    border: 2px solid #e0e0e0;
+    padding: 7px;
+    flex-wrap: wrap;
+    max-width: 450px;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#todo-container {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
 }

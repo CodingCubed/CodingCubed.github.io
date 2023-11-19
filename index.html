@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html>
-     <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Hey! I'm TheCappuccino!</title>
-          <link rel="stylesheet" href="style.css">
-          <link rel="icon" href="codingcubed_logo.png">
-     </head>
-     <body>
-          <div class="container">
-               <p onclick="window.location.href='./Terminal'">Terminal</p>
-               <p onclick="window.location.href='./Gatos'">GatOS</p>
-          </div>
-          <img src="https://www.pngmart.com/files/22/Crying-Cat-Meme-PNG-HD.png" id="img">
-     </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskavist</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <p id="title">Taskavist</p>
+        <div class="nav-buttons">
+            <button id="discord"><i class="fa-brands fa-discord"></i></button>
+        </div>
+    </nav>
+    <div id="todo-container">
+        <div id="input">
+            <input type="text" id="input-field">
+            <button id="add-button"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    </div>
+    <script defer src="app.js"></script>
+</body>
 </html>
