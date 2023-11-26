@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toki Pona Word Lookup</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+<body>
+  <nav>
+    <p id="title">o ante toki!</p>
+    <div id="nav-buttons">
+      <p id="box-1" data-lang="toki-pona">Toki Pona</p>
+      <button id="switch"><i class="fa-solid fa-repeat"></i></button>
+      <p id="box-2" data-lang="english">English</p>
+    </div>
+  </nav>
+  <div class="container">
+      <input type="text" id="input" placeholder="Toki Pona input">
+      <p id="output"></p>
+  </div>
+  <div id="english-warning" title="acknowledge (mi sona ni!)">
+    <p id="english-warning-header">Warning</p>
+    <p id="english-warning-body">At the moment, o ante toki! is not capable of translating toki pona to English.</p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
