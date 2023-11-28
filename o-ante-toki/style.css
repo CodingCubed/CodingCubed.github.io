@@ -1,103 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@400;500;600;700&display=swap');
-* {
-  font-family: "Inter";
-  transition: .2s ease;
-}
 body {
-  overflow: hidden;
   padding: 0;
   margin: 0;
-}
-#title {
-  font-family: "Bagel Fat One";
-  font-size: 25px;
-}
-nav {
-  display: flex;
-  border-bottom: 2px solid #dbdbdb;
-  height: 70px;
-  align-items: center;
-  padding: 0px 100px;
-}
-#nav-buttons {
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-  margin-left: auto;
-}
-#nav-buttons > button {
-  margin: 10px;
-  /* background: #dbdbdb; */
-  border: none;
-  border-radius: 10px;
-  padding: 5px 10px;
-  font-size: 16px;
+  background: white;
   color: #232323;
-  cursor: pointer;
-}
-#box-1, #box-2 {
-  background: #ededed;
-  padding: 5px 10px;
-  border-radius: 8px;
   display: flex;
-  justify-content: center;
-}
-#box-1::after {
-  content: "From:";
-  font-size: 10px;
-  position: absolute;
-  top: 8px;
-}
-#box-2::after {
-  content: "To:";
-  font-size: 10px;
-  position: absolute;
-  top: 8px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
 }
 #input {
-  background: #fefefe;
-  border: 2px solid #b9b9b9;
+  border: 2px solid #dbdbdb;
+  height: 35px;
+  width: 230px;
   border-radius: 10px;
-  height: 30px;
-  width: 400px;
-  padding: 0px 7px;
-  font-family: "Inter";
-  color: #232323;
+  padding: 0px 10px;
 }
 #input:focus {
-  border: 2px solid #666666;
+  border: 2px solid #ababab;
   outline: none;
 }
-.container {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%);
-}
 #output {
-  border: 2px solid #efefef;
-  height: 40px;
-  border-radius: 10px;
-  line-height: 40px;
+  border: 2px solid #e0e0e0;
+  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 35px;
+  text-align: center;
+  line-height: 35px;
   padding: 0px 10px;
-  color: #3d3d3d;
+  border-radius: 10px;
+  color: #232323;
+  line-height: 20px;
 }
-#english-warning {
-  background: rgb(255, 84, 84);
-  font-size: 14px;
-  color: white;
-  width: 300px;
-  padding: 1px 15px;
-  line-height: 13px;
-  border-radius: 15px;
-  cursor: pointer;
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
+h1 {
+  color: #232323;
 }
-#english-warning:hover {
-  background: rgb(212, 49, 49);
+#grammar {
+  width: 700px;
+  color: #ababab;
 }
-#english-warning-header {
+span {
   font-weight: bold;
+  color: #232323;
 }
